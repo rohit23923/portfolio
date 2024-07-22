@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import React from 'react'
+import { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa'
 import { HiOutlineMail} from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
-import {useNavigate} from 'react-router-dom'
 
 export const Nav = () => {
     
     const [nav, setnav] = useState(false)
-    const navigate=useNavigate();
     const hamburger = () => setnav(!nav)
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10'>
@@ -48,17 +46,12 @@ export const Nav = () => {
             <div className='hidden lg:flex  flex-col fixed top-[35%] left-0'>
                 <ul>
                     <li className='w-[130px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-blue-600 '>
-                        <div onClick={()=>{navigate('https://www.linkedin.com/in/rohit-sharma-aoo7/')}} className='flex justify-between items-center w-full text-gray-300 hover:cursor-pointer'>Linkden<FaLinkedin size={30} /></div>
+                        <a href='https://www.linkedin.com/in/rohit-sharma-oo7/' className='flex justify-between items-center w-full text-gray-300 hover:cursor-pointer'>Linkden<FaLinkedin size={30} /></a>
                     </li>
                     <li className='w-[130px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#333333] '>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/'>Github<FaGithub size={30} /></a>
+                        <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com'>Github<FaGithub size={30} /></a>
                     </li>
-                    <li className='w-[130px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#6fc2b0] '>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/'>Mail<HiOutlineMail size={30} /></a>
-                    </li>
-                    <li className='w-[130px] h-[40px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#565f69] '>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/'>Resume<BsFillPersonLinesFill size={30} /></a>
-                    </li>
+                    
                 </ul>
             </div>
 
