@@ -4,7 +4,7 @@ import css from '../Certificates/HtmlCss Zero to hero.jpg'
 import tailwind from '../Certificates/Tailwind Certificate.jpg'
 import introjs from '../Certificates/javascript_basic certificate_HackerRank.jpg'
 import interjs from '../Certificates/javascript_intermediate certificate_page-0001.jpg'
-import aws from '../Certificates/AWS.png'
+import fd from '../Certificates/Front-end Devloper React HackerRank.png'
 
 const Certificate = () => {
   return (
@@ -42,8 +42,8 @@ const Certificate = () => {
                     </div>
 
                     <div className='shadow-md shadow-[#040c16] md:hover:scale-110 duration-500'>
-                    <img className='w-full mx-auto' src={aws} alt='Certificate of Introduction to AI'/>
-                    <p className='my-4'>AWS</p>
+                    <img className='w-full mx-auto' src={fd} alt='Certificate of Front-end Devloper from HackerRank'/>
+                    <p className='my-4'>Front-end Devloper</p>
                 </div>
 
                 </div>
